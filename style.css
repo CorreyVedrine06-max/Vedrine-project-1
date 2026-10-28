@@ -1,0 +1,140 @@
+
+/* General Page Styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f5f9;
+    color: #333333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #12345a;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+header p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Navigation */
+nav {
+    background-color: #2563eb;
+    padding: 15px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+nav a:hover,
+nav a:focus-visible {
+    background-color: #12345a;
+}
+
+/* Main Content */
+main {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* Content Sections */
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+section h2 {
+    color: #12345a;
+    border-bottom: 2px solid #2563eb;
+    padding-bottom: 10px;
+}
+
+section h3 {
+    color: #2563eb;
+}
+
+/* Lists */
+section ul {
+    padding-left: 25px;
+}
+
+section li {
+    margin-bottom: 8px;
+}
+
+/* Links */
+main a {
+    color: #1d4ed8;
+}
+
+main a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #12345a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* Mobile Responsive Design */
+@media screen and (max-width: 600px) {
+    header h1 {
+        font-size: 26px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    main {
+        margin: 15px auto;
+        padding: 0 10px;
+    }
+
+    section {
+        padding: 18px;
+    }
+}
